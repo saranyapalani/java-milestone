@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main 
+{
+     public static void main(String[] args) 
+     {
+        int i,m,a=2;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the value of m");
+        m = in.nextInt();
+        int x[] = new int[m];
+        System.out.print("Sum of even numbers upto " + m + " is : 2");
+        for(i = 2; i <= m; i++)
+        {
+        x[i] = (2 * i);
+        a = a + x[i];
+        if(x[i]==m)
+        {
+        
+        System.out.print(" = " + (a-m));
+        break;
+        }
+        System.out.print(" + " + x[i]);
+        }
+     }
+    }
