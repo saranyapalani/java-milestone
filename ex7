@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        int a,u, min;
+        Scanner s = new Scanner(System.in);
+        int x[] = new int[6];
+        System.out.println("Enter six elements in the array :");
+        for(a = 0; a < 6; a++)
+        {
+            u = s.nextInt();
+            if(u >= 0)
+            x[a] = u;
+            else 
+            {
+            System.out.println("Enter only positive numbers");
+            a--;
+            }
+        }
+        System.out.println("The elements in the array are :");
+        for(a = 0; a < 6; a++)
+        {
+        System.out.println(x[a]);
+        }
+        System.out.print("\nThe smallest element in the array  is ");
+         min = x[0];
+        for(a = 0; a < 6; a++)
+        {
+           if(x[a] < min)
+           {
+             min = x[a]; 
+           }
+        }
+        System.out.print(min + " and the number less than " + min + " is " );
+        if(min==0)
+            System.out.print("0");
+        else
+        System.out.print(min-1);
+        }            
+}
